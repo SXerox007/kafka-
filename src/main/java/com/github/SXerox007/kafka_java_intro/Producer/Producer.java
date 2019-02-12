@@ -34,7 +34,7 @@ class ProducersElements{
 
     public ProducerRecord<String, String> createKeyValRecord(){
         System.out.println("Create Record");
-        return new ProducerRecord<String, String>("first_topic","First","hello sumit");
+        return new ProducerRecord<String, String>("first_topic","key_","hello sumit");
     }
 }
 
