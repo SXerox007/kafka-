@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e766e9c-b343-4b80-8918-88fe5f49f3ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/ProducerWithCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/ProducerWithCallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/ProducerWithKeyValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/ProducerWithCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/ProducerWithCallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Constants/constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/ProducerCallBackElements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/ProducerWithCallBack$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/ProducerWithCallBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/ProducersElements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/constants.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,17 +49,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="375">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/ProducerWithCallBack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+            <state relative-caret-position="90">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/ProducerWithKeyValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,34 +77,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/ProducerWithCallBack.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/Producer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="44" column="72" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="72" />
+            <state relative-caret-position="476">
+              <caret line="34" column="60" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="60" />
               <folding>
-                <element signature="e#1845#1846#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="495">
-                <caret line="46" column="3" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/info.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="41" selection-start-line="3" selection-end-line="3" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -96,8 +93,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -113,6 +110,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/info.sh" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/ProducerWithCallBack.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/ProducerWithCallBack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/Producer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/ProducerWithKeyValue.java" />
       </list>
     </option>
   </component>
@@ -184,6 +184,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kafka_java_intro" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="kafkajava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafkajava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka_java_intro" type="462c0819:PsiDirectoryNode" />
+              <item name="Producer" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -193,7 +202,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549953012839" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549970063091" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -214,13 +223,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProducerWithCallBack">
+  <component name="RunManager" selected="Application.Producer">
     <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.SXerox007.kafka_java_intro.Producer" />
+      <option name="MAIN_CLASS_NAME" value="com.github.SXerox007.kafka_java_intro.Producer.Producer" />
       <module name="kafkajava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.SXerox007.kafka_java_intro.*" />
+          <option name="PATTERN" value="com.github.SXerox007.kafka_java_intro.Producer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -229,11 +238,11 @@
       </method>
     </configuration>
     <configuration name="ProducerWithCallBack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.SXerox007.kafka_java_intro.ProducerWithCallBack" />
+      <option name="MAIN_CLASS_NAME" value="com.github.SXerox007.kafka_java_intro.Producer.ProducerWithCallBack" />
       <module name="kafkajava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.SXerox007.kafka_java_intro.*" />
+          <option name="PATTERN" value="com.github.SXerox007.kafka_java_intro.Producer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -243,8 +252,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProducerWithCallBack" />
         <item itemvalue="Application.Producer" />
+        <item itemvalue="Application.ProducerWithCallBack" />
       </list>
     </recent_temporary>
   </component>
@@ -258,12 +267,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549885824481</updated>
-      <workItem from="1549885829489" duration="9264000" />
+      <workItem from="1549885829489" duration="10941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9264000" />
+    <option name="totallyTimeSpent" value="10941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -276,7 +285,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.28554216" />
+      <window_info anchor="bottom" id="Terminal" weight="0.28554216" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -307,63 +316,11 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/ProducerWithCallBack.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/ProducerWithCallBack.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/ProducerWithCallBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="44" column="72" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="72" />
-          <folding>
-            <element signature="e#1845#1846#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/info.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -378,6 +335,47 @@
             <caret line="46" column="3" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Constants/constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/ProducerWithCallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="60" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/ProducerWithKeyValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
