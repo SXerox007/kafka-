@@ -27,11 +27,13 @@ class ProducersElements{
         return new KafkaProducer<String, String>(createProperties());
     }
 
+    // Create the record
     public ProducerRecord<String, String> createRecord(){
         System.out.println("Create Record");
         return new ProducerRecord<String, String>("first_topic","hello sumit");
     }
 
+    // Create key val record
     public ProducerRecord<String, String> createKeyValRecord(){
         System.out.println("Create Record");
         return new ProducerRecord<String, String>("first_topic","key_","hello sumit");
