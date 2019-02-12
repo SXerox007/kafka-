@@ -25,6 +25,7 @@ class ProducerCallBackElements {
         return new KafkaProducer<String, String>(createProperties());
     }
 
+    //create record
     public ProducerRecord<String, String> createRecord(){
         return new ProducerRecord<String, String>("first_topic","hello sumit");
     }
