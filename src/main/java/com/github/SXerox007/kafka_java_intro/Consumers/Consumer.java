@@ -2,12 +2,13 @@ package com.github.SXerox007.kafka_java_intro.Consumers;
 
 import com.github.SXerox007.kafka_java_intro.Constants.constants;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
-import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
-import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Properties;
 
 class ConsumerElements{
@@ -23,6 +24,22 @@ class ConsumerElements{
         properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,constants.OFFSET_LATEST);
         return properties;
     }
+
+    // Create the consumers
+    public KafkaConsumer<String,String> createConsumer(){
+        return new KafkaConsumer<String, String>(createProperties());
+    }
+
+    //subscribe single topic only
+    public void subscribeSingleConsumer(){
+        createConsumer().subscribe(Collections.singleton(constants.TOPIC_NAME));
+    }
+
+    //subscribe single topic only
+    public void subscribeMultipleConsumer(){
+        createConsumer().subscribe(Arrays.asList(constants.TOPIC_NAME));
+    }
+
 
 }
 

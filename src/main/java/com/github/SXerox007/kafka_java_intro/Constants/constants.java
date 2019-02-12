@@ -6,4 +6,5 @@ public interface constants {
     String OFFSET_NONE = "none";
     String OFFSET_EARLIEST = "earliest";
     String OFFSET_LATEST = "latest";
+    String TOPIC_NAME = "first_topic";
 }
