@@ -45,3 +45,50 @@ https://kafka.apache.org/documentation/#producerconfig
 ```$xslt
 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --group first_group
 ```
+
+## Consumers
+
+Step 1:
+```$xslt
+ // Create the consumers
+    public KafkaConsumer<String,String> createConsumer(){
+        return new KafkaConsumer<>(createProperties());
+    }
+```
+
+Step 2:
+```$xslt
+ //create properties for consumer
+    private Properties createProperties(){
+        System.out.println("Create Properties");
+        Properties properties = new Properties();
+        properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, constants.BOOTSTRAP_SERVER);
+        properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG,constants.GROUP_ID);
+        properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,constants.OFFSET_LATEST);
+        return properties;
+    }
+```
+
+Step 3:
+```$xslt
+  //subscribe single topic only
+    public void subscribeSingleConsumer(){
+        createConsumer().subscribe(Collections.singleton(constants.TOPIC_NAME));
+    }
+    
+     //subscribe single topic only
+        public void subscribeMultipleConsumer(){
+            createConsumer().subscribe(Arrays.asList(constants.TOPIC_NAME));
+        }
+```
+
+Step 4: 
+```$xslt
+  // Get records
+ ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+```
+
+###### Note: Here used three properties which are required there are more properties  see link below
+https://kafka.apache.org/documentation/#consumerconfig
