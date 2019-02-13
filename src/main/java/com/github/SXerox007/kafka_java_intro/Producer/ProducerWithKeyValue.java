@@ -15,21 +15,19 @@ public class ProducerWithKeyValue {
         final KafkaProducer<String, String> producer = producersElements.createProducers();
         //send msg with callback
         //callback tells us is there any exception or success
-        producer.send(producersElements.createKeyValRecord(), new Callback() {
-            public void onCompletion(RecordMetadata recordMetadata, Exception e) {
-                if (e == null){
-                    //success
-                    logger.info("Topic: " +  recordMetadata.topic() +
-                            "\n OffSet: " + recordMetadata.hasOffset() +
-                            "\n TimeStamp: " +  recordMetadata.hasTimestamp() +
-                            "\n Partition: " + recordMetadata.partition());
+        producer.send(producersElements.createKeyValRecord(), (recordMetadata, e) -> {
+            if (e == null){
+                //success
+                logger.info("Topic: " +  recordMetadata.topic() +
+                        "\n OffSet: " + recordMetadata.hasOffset() +
+                        "\n TimeStamp: " +  recordMetadata.hasTimestamp() +
+                        "\n Partition: " + recordMetadata.partition());
 
-                }else{
-                    //error
-                    logger.error("Error while sending the data to topic: " +  e.getMessage());
-                }
-
+            }else{
+                //error
+                logger.error("Error while sending the data to topic: " +  e.getMessage());
             }
+
         });
         //flush and close
         producer.flush();
