@@ -10,9 +10,9 @@ public class ProducerBulkMsg {
         final Logger logger = LoggerFactory.getLogger(ProducerBulkMsg.class);
         ProducersElements producersElements = new ProducersElements();
             //data send is async
+        final KafkaProducer<String, String> producer = producersElements.createProducers();
 
             for (int i=0;i<100;i++) {
-                final KafkaProducer<String, String> producer = producersElements.createProducers();
             //send msg with callback
             //callback tells us is there any exception or success
             producer.send(producersElements.createKeyValRecord(), (recordMetadata, e) -> {

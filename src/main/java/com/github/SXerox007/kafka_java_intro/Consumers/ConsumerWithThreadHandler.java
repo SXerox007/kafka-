@@ -19,7 +19,7 @@ public class ConsumerWithThreadHandler {
         KafkaConsumer<String,String> consumer = consumerElements.createConsumer();
         consumer.subscribe(Arrays.asList(constants.TOPIC_NAME));
         //Make runnable of thread
-        ConsumerThread runnable = new ConsumerThread(countDownLatch,consumer);
+        Runnable runnable = new ConsumerThread(countDownLatch,consumer);
         // create thread
         Thread thread = new Thread(runnable);
         //start the thread
@@ -27,7 +27,7 @@ public class ConsumerWithThreadHandler {
 
         //  shutdown
         Runtime.getRuntime().addShutdownHook(new Thread(()->{
-            runnable.shutDown();
+            ((ConsumerThread) runnable).shutDown();
             try {
                 countDownLatch.await();
             } catch (InterruptedException e) {

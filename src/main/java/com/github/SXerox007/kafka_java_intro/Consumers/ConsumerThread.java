@@ -34,7 +34,7 @@ public class ConsumerThread implements Runnable {
                 logger.info("\nPartition: " + record.partition() + " Offset: " + record.offset());
             }
         }catch (WakeupException e){
-            logger.info("Wakeup Exception");
+            logger.info("Kafka Consumer Exited");
         } finally {
             consumer.close();
             // tell main method consumer is over
