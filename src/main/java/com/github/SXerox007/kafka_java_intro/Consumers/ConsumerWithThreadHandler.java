@@ -7,6 +7,7 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 import java.util.Arrays;
 import java.util.concurrent.CountDownLatch;
 
+
 public class ConsumerWithThreadHandler {
     public static void main(String[] args) {
         new ConsumerWithThreadHandler().run();
