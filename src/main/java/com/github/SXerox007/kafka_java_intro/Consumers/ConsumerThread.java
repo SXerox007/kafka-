@@ -27,11 +27,13 @@ public class ConsumerThread implements Runnable {
     @Override
     public void run() {
         try {
-            ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+            while(true) {
+                ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
 
-            for (ConsumerRecord<String, String> record : records) {
-                logger.info("\nKey: " + record.key() + " Value: " + record.value());
-                logger.info("\nPartition: " + record.partition() + " Offset: " + record.offset());
+                for (ConsumerRecord<String, String> record : records) {
+                    logger.info("\nKey: " + record.key() + " Value: " + record.value());
+                    logger.info("\nPartition: " + record.partition() + " Offset: " + record.offset());
+                }
             }
         }catch (WakeupException e){
             logger.info("Kafka Consumer Exited");
