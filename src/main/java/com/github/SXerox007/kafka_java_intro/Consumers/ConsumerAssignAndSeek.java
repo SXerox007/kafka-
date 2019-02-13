@@ -40,7 +40,7 @@ public class ConsumerAssignAndSeek {
 
     public static void main(String[] args) {
         Logger logger = LoggerFactory.getLogger(ConsumerAssignAndSeek.class.getName());
-        ConsumerElements consumerElements = new ConsumerElements();
+        ConsumerAssignAndSeekElements consumerElements = new ConsumerAssignAndSeekElements();
         KafkaConsumer<String,String> consumer = consumerElements.createConsumer();
 
         //Topic partition with topic name and partition
