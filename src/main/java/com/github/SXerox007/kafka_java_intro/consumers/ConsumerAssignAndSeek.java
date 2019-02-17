@@ -1,20 +1,21 @@
-package com.github.SXerox007.kafka_java_intro.Consumers;
+package com.github.SXerox007.kafka_java_intro.consumers;
 
-import com.github.SXerox007.kafka_java_intro.Constants.constants;
+import com.github.SXerox007.kafka_java_intro.constants.constants;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Properties;
 
-class ConsumerElements{
+
+class ConsumerAssignAndSeekElements{
 
     //create properties for consumer
     private Properties createProperties(){
@@ -23,8 +24,7 @@ class ConsumerElements{
         properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, constants.BOOTSTRAP_SERVER);
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
-        properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG,constants.GROUP_ID);
-        properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,constants.OFFSET_LATEST);
+        properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,constants.OFFSET_EARLIEST);
         return properties;
     }
 
@@ -33,36 +33,39 @@ class ConsumerElements{
         return new KafkaConsumer<>(createProperties());
     }
 
-    //subscribe single topic only
-    public void subscribeSingleConsumer(){
-        createConsumer().subscribe(Collections.singleton(constants.TOPIC_NAME));
-    }
-
-    //subscribe single topic only
-    public void subscribeMultipleConsumer(){
-        createConsumer().subscribe(Arrays.asList(constants.TOPIC_NAME));
-    }
-
-
 }
 
-
-public class Consumer {
+// Assign and seek used for where to start read message (range)
+public class ConsumerAssignAndSeek {
 
     public static void main(String[] args) {
-        Logger logger = LoggerFactory.getLogger(Consumer.class.getName());
-        ConsumerElements consumerElements = new ConsumerElements();
+        Logger logger = LoggerFactory.getLogger(ConsumerAssignAndSeek.class.getName());
+        ConsumerAssignAndSeekElements consumerElements = new ConsumerAssignAndSeekElements();
         KafkaConsumer<String,String> consumer = consumerElements.createConsumer();
-        consumer.subscribe(Arrays.asList(constants.TOPIC_NAME));
 
-        while (true) {
+        //Topic partition with topic name and partition
+        // Assign
+        TopicPartition partition = new TopicPartition(constants.TOPIC_NAME,constants.PARTITION);
+        consumer.assign(Arrays.asList(partition));
+
+        // Seek
+        consumer.seek(partition,constants.OFFSET_TO_READ_FROM);
+
+        //any condition
+        int temp = 5,i=0;
+        boolean read=true;
+
+        while (read) {
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
-
             for (ConsumerRecord<String, String> record : records) {
+                i++;
                 logger.info("\nKey: " + record.key() + " Value: " + record.value());
                 logger.info("\nPartition: " + record.partition() + " Offset: " + record.offset());
+                if (temp==i){
+                    read=false;
+                    break;
+                }
             }
         }
     }
-
 }

@@ -92,3 +92,6 @@ Step 4:
 
 ###### Note: Here used three properties which are required there are more properties  see link below
 https://kafka.apache.org/documentation/#consumerconfig
+
+
+# Twitter-

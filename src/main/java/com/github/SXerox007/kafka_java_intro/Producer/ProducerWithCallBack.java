@@ -1,14 +1,8 @@
 package com.github.SXerox007.kafka_java_intro.Producer;
 
-import com.github.SXerox007.kafka_java_intro.Constants.constants;
 import org.apache.kafka.clients.producer.*;
-import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.Properties;
-
-
 
 
 //Producer Kafka
