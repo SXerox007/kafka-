@@ -1,6 +1,6 @@
 package com.github.SXerox007.kafka_twitter.Producer.constants;
 
-public class keys {
+public interface keys {
 
     String CONSUMER_API = "lPLPq7kRg4fk7bmSTw9Nbw3bd";
     String CONSUMER_SECRET = "D93Qg5gRd6oaBhzBeJatFDBkza74bN4cbb2luDxlHJVgFohO6h";
