@@ -1,4 +1,4 @@
-package com.github.SXerox007.kafka_twitter.Producer;
+package com.github.SXerox007.kafka_twitter.Producer.producer;
 
 
 import com.github.SXerox007.kafka_twitter.Producer.setup.Setup;
