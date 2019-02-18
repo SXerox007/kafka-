@@ -42,7 +42,7 @@ public class Setup {
 }
 
 ```
-#### Create Producer and send msg
+### Create Producer and send msg
 
 ```$xslt
     // Create the producers
@@ -55,7 +55,7 @@ public class Setup {
 ```
 
 
-#### For test the cli consumers
+### For test the cli consumers
 ```$xslt
 
 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic twitter_tweets --from-beginning
