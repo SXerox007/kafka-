@@ -1,8 +1,10 @@
 package com.github.SXerox007.kafka_twitter.Producer.producer;
 
 
+import com.github.SXerox007.kafka_java_intro.Producer.ProducerWithCallBack;
 import com.github.SXerox007.kafka_twitter.Producer.setup.Setup;
 import com.twitter.hbc.core.Client;
+import org.apache.kafka.clients.producer.KafkaProducer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,11 +26,19 @@ public class TwitterProducer {
 
     //run
     private void run() {
+        //setup with twitter
         setup = new Setup();
         BlockingQueue<String> msgQueue = new LinkedBlockingQueue<>(1000);
         Client client = setup.createClient(msgQueue);
         client.connect();
 
+
+        // Create kafka producer
+        createProducer();
+
+
+
+        // Get message form twitter
         // on a different thread, or multiple different threads....
         while (!client.isDone()) {
             String msg = null;
@@ -45,5 +55,13 @@ public class TwitterProducer {
             }
 
         }
+    }
+
+
+    private void createProducer(){
+        ProducerElements producerElements = new ProducerElements();
+        final KafkaProducer<String, String> producer = producerElements.createProducers();
+
+
     }
 }
