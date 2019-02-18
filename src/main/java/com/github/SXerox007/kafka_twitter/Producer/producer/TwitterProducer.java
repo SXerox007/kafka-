@@ -1,10 +1,10 @@
 package com.github.SXerox007.kafka_twitter.Producer.producer;
 
-
-import com.github.SXerox007.kafka_java_intro.Producer.ProducerWithCallBack;
+import com.github.SXerox007.kafka_twitter.Producer.constants.constants;
 import com.github.SXerox007.kafka_twitter.Producer.setup.Setup;
 import com.twitter.hbc.core.Client;
 import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,8 +34,8 @@ public class TwitterProducer {
 
 
         // Create kafka producer
-        createProducer();
-
+        ProducerElements producerElements = new ProducerElements();
+        final KafkaProducer<String, String> producer = producerElements.createProducers();
 
 
         // Get message form twitter
@@ -51,17 +51,12 @@ public class TwitterProducer {
                 client.stop();
             }
             if (msg != null) {
+                // log the incoming msg from twitter
                 logger.info(msg);
+                // send data to the consumer
+                producer.send(new ProducerRecord<>(constants.TOPIC_NAME,null,msg));
             }
 
         }
-    }
-
-
-    private void createProducer(){
-        ProducerElements producerElements = new ProducerElements();
-        final KafkaProducer<String, String> producer = producerElements.createProducers();
-
-
     }
 }
