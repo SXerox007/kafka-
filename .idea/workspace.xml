@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e766e9c-b343-4b80-8918-88fe5f49f3ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/TwitterProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/TwitterProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/setup/Setup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/setup/Setup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Constants/constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Constants/constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/ConsumerAssignAndSeek.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/ConsumerAssignAndSeek.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/ConsumerAssignAndSeekElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/ConsumerAssignAndSeekElements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/ConsumerElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/ConsumerElements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/ConsumerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/ConsumerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/ConsumerWithThreadHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Consumers/ConsumerWithThreadHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Producer/ProducerWithCallBack.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Producer/ProducerWithCallBack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Producer/ProducersElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/SXerox007/kafka_java_intro/Producer/ProducersElements.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/TwitterProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
+            <state relative-caret-position="387">
               <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -61,16 +50,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/setup/Setup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+            <state relative-caret-position="516">
+              <caret line="49" lean-forward="true" selection-start-line="18" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1072#1073#0" expanded="true" />
                 <element signature="e#1131#1132#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="318">
+                <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -126,6 +127,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/setup/setup.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/TwitterProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/setup/Setup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/README.md" />
       </list>
     </option>
   </component>
@@ -213,6 +215,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="SXerox007" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka_java_intro" type="462c0819:PsiDirectoryNode" />
+              <item name="Producer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafkajava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafkajava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SXerox007" type="462c0819:PsiDirectoryNode" />
               <item name="Producer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,12 +256,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550426723098" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550470848650" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer" />
       <recent name="$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro" />
     </key>
   </component>
@@ -351,12 +364,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549885824481</updated>
-      <workItem from="1549885829489" duration="45367000" />
+      <workItem from="1549885829489" duration="45969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45367000" />
+    <option name="totallyTimeSpent" value="45969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -367,17 +380,17 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.28554216" />
+      <window_info anchor="bottom" id="Terminal" order="5" visible="true" weight="0.28554216" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -423,16 +436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
           <caret line="33" column="25" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="33" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/ProducerBulkMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -535,7 +538,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/TwitterProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
+        <state relative-caret-position="387">
           <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -545,15 +548,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_java_intro/Producer/ProducerBulkMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/setup/Setup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        <state relative-caret-position="516">
+          <caret line="49" lean-forward="true" selection-start-line="18" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1072#1073#0" expanded="true" />
             <element signature="e#1131#1132#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/SXerox007/kafka_twitter/Producer/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="318">
+            <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

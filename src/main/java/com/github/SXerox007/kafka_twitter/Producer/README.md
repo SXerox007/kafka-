@@ -1,21 +1,13 @@
-package com.github.SXerox007.kafka_twitter.Producer.setup;
+# Twitter-with-kafka
 
-import com.google.common.collect.Lists;
-import com.twitter.hbc.ClientBuilder;
-import com.twitter.hbc.core.Client;
-import com.twitter.hbc.core.Constants;
-import com.twitter.hbc.core.Hosts;
-import com.twitter.hbc.core.HttpHosts;
-import com.twitter.hbc.core.endpoint.StatusesFilterEndpoint;
-import com.twitter.hbc.core.processor.StringDelimitedProcessor;
-import com.twitter.hbc.httpclient.auth.Authentication;
-import com.twitter.hbc.httpclient.auth.OAuth1;
 
-import java.util.List;
-import java.util.concurrent.BlockingQueue;
+Get the data from twitter in continues and push data to kafka
+and do the elastic search for test
 
-import static com.github.SXerox007.kafka_twitter.Producer.constants.keys.*;
+## Producer
 
+### Setup Twitter :
+```$xslt
 public class Setup {
 
     private StatusesFilterEndpoint connectionTwitter() {
@@ -24,16 +16,17 @@ public class Setup {
         hosebirdEndpoint.trackTerms(terms);
         return hosebirdEndpoint;
     }
-
+    //create host
     private Hosts createHosts(){
         return new HttpHosts(Constants.STREAM_HOST);
     }
 
-
+    // oAuth
     private  Authentication oAuth(){
         return new OAuth1(CONSUMER_API, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
     }
 
+    // create the client
     public Client createClient(BlockingQueue<String> msgQueue){
         ClientBuilder builder = new ClientBuilder()
                 .name("Hosebird-Client-01")                              // optional: mainly for the logs
@@ -47,3 +40,5 @@ public class Setup {
 
 
 }
+
+```
