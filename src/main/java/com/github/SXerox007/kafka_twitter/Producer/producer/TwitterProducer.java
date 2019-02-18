@@ -3,10 +3,8 @@ package com.github.SXerox007.kafka_twitter.Producer.producer;
 import com.github.SXerox007.kafka_twitter.Producer.constants.constants;
 import com.github.SXerox007.kafka_twitter.Producer.setup.Setup;
 import com.twitter.hbc.core.Client;
-import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.clients.producer.RecordMetadata;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

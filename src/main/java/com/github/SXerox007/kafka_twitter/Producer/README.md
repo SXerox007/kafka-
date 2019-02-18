@@ -51,7 +51,12 @@ public class Setup {
     }
     
     //send 
-    roducer.send(new ProducerRecord<>(constants.TOPIC_NAME,null,msg));
+   
+    producer.send(new ProducerRecord<>(constants.TOPIC_NAME, null, msg), (recordMetadata, e) -> {
+        if (e != null){
+           logger.error("Error: " + e.getMessage());
+        }
+    });
 ```
 
 
