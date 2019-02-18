@@ -49,6 +49,7 @@ public class TwitterProducer {
                 e.printStackTrace();
                 //stop client
                 client.stop();
+                producer.close();
             }
             if (msg != null) {
                 // log the incoming msg from twitter
@@ -56,7 +57,7 @@ public class TwitterProducer {
                 // send data to the consumer
                 producer.send(new ProducerRecord<>(constants.TOPIC_NAME, null, msg), (recordMetadata, e) -> {
                     if (e != null){
-                     logger.error("Error: " + e.getMessage());
+                     logger.error("Error: " , e.getMessage());
                     }
                 });
             }
