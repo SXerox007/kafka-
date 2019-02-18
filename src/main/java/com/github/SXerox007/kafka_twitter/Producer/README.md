@@ -42,3 +42,22 @@ public class Setup {
 }
 
 ```
+#### Create Producer and send msg
+
+```$xslt
+    // Create the producers
+    public KafkaProducer<String,String> createProducers(){
+        return new KafkaProducer<>(createProperties());
+    }
+    
+    //send 
+    roducer.send(new ProducerRecord<>(constants.TOPIC_NAME,null,msg));
+```
+
+
+#### For test the cli consumers
+```$xslt
+
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic twitter_tweets --from-beginning
+
+```

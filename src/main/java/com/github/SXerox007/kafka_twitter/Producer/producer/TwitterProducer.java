@@ -44,7 +44,7 @@ public class TwitterProducer {
             String msg = null;
             try {
                // String msg = msgQueue.take();
-                 msg = msgQueue.poll(10, TimeUnit.SECONDS);
+                 msg = msgQueue.poll(100, TimeUnit.SECONDS);
             } catch (InterruptedException e) {
                 e.printStackTrace();
                 //stop client
