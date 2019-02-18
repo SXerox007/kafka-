@@ -1,4 +1,4 @@
-package com.github.SXerox007.kafka_twitter.Producer.consumer;
+package com.github.SXerox007.kafka_twitter.consumer;
 
 // consumer
 public class consumer {

@@ -1,7 +1,7 @@
-package com.github.SXerox007.kafka_twitter.Producer.producer;
+package com.github.SXerox007.kafka_twitter.Producer;
 
-import com.github.SXerox007.kafka_twitter.Producer.constants.constants;
-import com.github.SXerox007.kafka_twitter.Producer.setup.Setup;
+import com.github.SXerox007.kafka_twitter.constants.constants;
+import com.github.SXerox007.kafka_twitter.setup.Setup;
 import com.twitter.hbc.core.Client;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;

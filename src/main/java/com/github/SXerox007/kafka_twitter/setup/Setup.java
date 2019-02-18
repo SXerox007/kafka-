@@ -1,5 +1,6 @@
-package com.github.SXerox007.kafka_twitter.Producer.setup;
+package com.github.SXerox007.kafka_twitter.setup;
 
+import com.github.SXerox007.kafka_twitter.constants.keys;
 import com.google.common.collect.Lists;
 import com.twitter.hbc.ClientBuilder;
 import com.twitter.hbc.core.Client;
@@ -13,8 +14,6 @@ import com.twitter.hbc.httpclient.auth.OAuth1;
 
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
-
-import static com.github.SXerox007.kafka_twitter.Producer.constants.keys.*;
 
 public class Setup {
 
@@ -31,7 +30,7 @@ public class Setup {
 
 
     private  Authentication oAuth(){
-        return new OAuth1(CONSUMER_API, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
+        return new OAuth1(keys.CONSUMER_API, keys.CONSUMER_SECRET, keys.ACCESS_TOKEN, keys.ACCESS_TOKEN_SECRET);
     }
 
     public Client createClient(BlockingQueue<String> msgQueue){

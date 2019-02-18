@@ -1,4 +1,4 @@
-package com.github.SXerox007.kafka_twitter.Producer.constants;
+package com.github.SXerox007.kafka_twitter.constants;
 
 public interface constants {
     String BOOTSTRAP_SERVER = "localhost:9092";
