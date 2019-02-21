@@ -41,7 +41,6 @@ public class Setup {
                 .endpoint(connectionTwitter())
                 .processor(new StringDelimitedProcessor(msgQueue));
         return builder.build();
-
     }
 
 
