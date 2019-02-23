@@ -1,6 +1,6 @@
-package com.github.SXerox007.kafka_java_intro.producer;
+package kafka_java_intro.producer;
 
-import com.github.SXerox007.kafka_java_intro.constants.constants;
+import kafka_java_intro.constants.constants;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;

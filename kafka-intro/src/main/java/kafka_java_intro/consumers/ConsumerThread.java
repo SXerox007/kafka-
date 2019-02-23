@@ -1,4 +1,4 @@
-package com.github.SXerox007.kafka_java_intro.consumers;
+package kafka_java_intro.consumers;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;

@@ -1,4 +1,4 @@
-package com.github.SXerox007.kafka_java_intro.constants;
+package kafka_java_intro.constants;
 
 public interface constants {
     String BOOTSTRAP_SERVER = "localhost:9092";

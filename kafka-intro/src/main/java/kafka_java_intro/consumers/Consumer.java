@@ -1,6 +1,6 @@
-package com.github.SXerox007.kafka_java_intro.consumers;
+package kafka_java_intro.consumers;
 
-import com.github.SXerox007.kafka_java_intro.constants.constants;
+import kafka_java_intro.constants.constants;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;

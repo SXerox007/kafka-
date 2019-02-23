@@ -1,4 +1,4 @@
-package com.github.SXerox007.kafka_java_intro.producer;
+package kafka_java_intro.producer;
 
 import org.apache.kafka.clients.producer.*;
 import org.slf4j.Logger;
