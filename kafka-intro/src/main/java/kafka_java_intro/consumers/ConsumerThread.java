@@ -48,6 +48,5 @@ public class ConsumerThread implements Runnable {
     public void shutDown(){
         // it will interrupt and make the exception
         consumer.wakeup();
-
     }
 }
