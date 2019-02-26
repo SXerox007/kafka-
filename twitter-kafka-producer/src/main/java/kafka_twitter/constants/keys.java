@@ -1,4 +1,4 @@
-package com.github.SXerox007.kafka_twitter.constants;
+package kafka_twitter.constants;
 
 public interface keys {
 

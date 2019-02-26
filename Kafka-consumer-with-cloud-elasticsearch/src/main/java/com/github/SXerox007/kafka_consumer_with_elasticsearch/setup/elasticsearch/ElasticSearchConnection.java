@@ -25,11 +25,12 @@ public class ElasticSearchConnection {
     // client builder
     // which allow insert data to elastic search
     //Basically it's a connnection b/w the bonsai cloud
-    private RestHighLevelClient clientBuilder(){
+    public RestHighLevelClient clientBuilder(){
         RestClientBuilder restClientBuilder = RestClient.builder(new HttpHost(ELASTIC_SEARCH_CLOUD_HOST_NAME,
                 443,"https")).setHttpClientConfigCallback(httpAsyncClientBuilder ->
                 httpAsyncClientBuilder.setDefaultCredentialsProvider(credentialProvider()));
-         return new RestHighLevelClient(restClientBuilder);
+        return new RestHighLevelClient(restClientBuilder);
+
     }
 
 }

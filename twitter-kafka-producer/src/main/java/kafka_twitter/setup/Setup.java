@@ -1,6 +1,6 @@
-package com.github.SXerox007.kafka_twitter.setup;
+package kafka_twitter.setup;
 
-import com.github.SXerox007.kafka_twitter.constants.keys;
+import kafka_twitter.constants.keys;
 import com.google.common.collect.Lists;
 import com.twitter.hbc.ClientBuilder;
 import com.twitter.hbc.core.Client;

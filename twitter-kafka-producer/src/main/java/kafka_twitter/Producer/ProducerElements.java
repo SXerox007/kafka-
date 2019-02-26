@@ -1,6 +1,6 @@
-package com.github.SXerox007.kafka_twitter.Producer;
+package kafka_twitter.Producer;
 
-import com.github.SXerox007.kafka_twitter.constants.constants;
+import kafka_twitter.constants.constants;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
