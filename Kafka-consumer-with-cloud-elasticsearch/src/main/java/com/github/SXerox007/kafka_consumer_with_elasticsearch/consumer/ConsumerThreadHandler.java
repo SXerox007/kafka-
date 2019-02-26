@@ -1,9 +1,13 @@
 package com.github.SXerox007.kafka_consumer_with_elasticsearch.consumer;
 
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.errors.WakeupException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.Duration;
 import java.util.concurrent.CountDownLatch;
 
 // consumer thread handler
@@ -22,6 +26,22 @@ public class ConsumerThreadHandler implements Runnable {
 
     @Override
     public void run() {
+        try {
+            while(true) {
+                ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+
+                for (ConsumerRecord<String, String> record : records) {
+                    logger.info("\nKey: " + record.key() + " Value: " + record.value());
+                    logger.info("\nPartition: " + record.partition() + " Offset: " + record.offset());
+                }
+            }
+        }catch (WakeupException e){
+            logger.info("Kafka Consumer Exited");
+        } finally {
+            consumer.close();
+            // tell main method consumer is over
+            latch.countDown();
+        }
 
     }
 
