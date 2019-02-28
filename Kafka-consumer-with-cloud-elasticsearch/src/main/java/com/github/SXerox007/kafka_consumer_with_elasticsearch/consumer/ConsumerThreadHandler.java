@@ -1,6 +1,7 @@
 package com.github.SXerox007.kafka_consumer_with_elasticsearch.consumer;
 
 import com.github.SXerox007.kafka_consumer_with_elasticsearch.setup.elasticsearch.ElasticSearchConnection;
+import com.google.gson.JsonParser;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -25,8 +26,10 @@ public class ConsumerThreadHandler implements Runnable {
     private KafkaConsumer<String,String> consumer;
     private Logger logger;
     private RestHighLevelClient client;
+    private JsonParser jsonParser;
 
      ConsumerThreadHandler(final CountDownLatch latch, final KafkaConsumer<String,String> consumer){
+         jsonParser = new JsonParser();
          ElasticSearchConnection elasticSearchConnection = new ElasticSearchConnection();
          this.client =  elasticSearchConnection.clientBuilder();
          this.logger = LoggerFactory.getLogger(ConsumerThreadHandler.class.getName());
@@ -42,7 +45,8 @@ public class ConsumerThreadHandler implements Runnable {
                 for (ConsumerRecord<String, String> record : records) {
                     // we have receive all the data we have to push into the elastic search
                     try {
-                        logger.info(pushDataToBonsai("randomX",record.value()));
+                       String id = pushDataToBonsai(getTwitterIdFromTweet(record.value()),record.value());
+                        logger.info("Bonsai Data element ID: " + id);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -72,17 +76,21 @@ public class ConsumerThreadHandler implements Runnable {
 
 
     // push data to bonsai (Elastic Cloud)
-    private String pushDataToBonsai(String id, String value) throws IOException {
+    private String pushDataToBonsai(final String id, final String value) throws IOException {
          // create a index reqest
         // it will go to '/twitter/tweets'
         IndexRequest indexRequest = new IndexRequest(
                 "twitter",
-                "tweets",
-                id
+                "tweets"
         ).source(value, XContentType.JSON);
 
         // Here we get the index response
         IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
         return  indexResponse.getId();
+    }
+
+    // generate the id
+    private String getTwitterIdFromTweet(final String tweetJson){
+         return jsonParser.parse(tweetJson).getAsJsonObject().get("id_str").toString();
     }
 }
