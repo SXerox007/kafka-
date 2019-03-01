@@ -21,7 +21,6 @@ import java.util.concurrent.CountDownLatch;
 // consumer thread handler
 public class ConsumerThreadHandler implements Runnable {
 
-
     private CountDownLatch latch;
     private KafkaConsumer<String,String> consumer;
     private Logger logger;
@@ -69,7 +68,7 @@ public class ConsumerThreadHandler implements Runnable {
     }
 
     //shutdown the consumer
-    public void shutDown(){
+    void shutDown(){
         // it will interrupt and make the exception
         consumer.wakeup();
     }
@@ -81,7 +80,8 @@ public class ConsumerThreadHandler implements Runnable {
         // it will go to '/twitter/tweets'
         IndexRequest indexRequest = new IndexRequest(
                 "twitter",
-                "tweets"
+                "tweets",
+                id
         ).source(value, XContentType.JSON);
 
         // Here we get the index response
