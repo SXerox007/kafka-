@@ -46,7 +46,9 @@ public class ConsumerThreadHandler implements Runnable {
                     try {
                        String id = pushDataToBonsai(getTwitterIdFromTweet(record.value()),record.value());
                         logger.info("Bonsai Data element ID: " + id);
-                    } catch (IOException e) {
+                    } catch (Exception e) {
+                        // Bad data
+                        logger.error("Bad Data Kafka: " + record.value());
                         e.printStackTrace();
                     }
                 }
