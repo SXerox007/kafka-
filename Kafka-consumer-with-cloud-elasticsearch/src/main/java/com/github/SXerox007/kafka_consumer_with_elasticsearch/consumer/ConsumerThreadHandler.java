@@ -6,6 +6,8 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.errors.WakeupException;
+import org.elasticsearch.action.bulk.BulkRequest;
+import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.RequestOptions;
@@ -26,8 +28,12 @@ public class ConsumerThreadHandler implements Runnable {
     private Logger logger;
     private RestHighLevelClient client;
     private JsonParser jsonParser;
-
+    private BulkRequest bulkRequest;
+    private BulkResponse bulkResponse;
      ConsumerThreadHandler(final CountDownLatch latch, final KafkaConsumer<String,String> consumer){
+         // performance improvement using bulk request
+          this.bulkRequest = new BulkRequest();
+         // json parser
          jsonParser = new JsonParser();
          ElasticSearchConnection elasticSearchConnection = new ElasticSearchConnection();
          this.client =  elasticSearchConnection.clientBuilder();
@@ -44,7 +50,7 @@ public class ConsumerThreadHandler implements Runnable {
                 for (ConsumerRecord<String, String> record : records) {
                     // we have receive all the data we have to push into the elastic search
                     try {
-                       String id = pushDataToBonsai(getTwitterIdFromTweet(record.value()),record.value());
+                       String id = pushDataToBonsai(getTwitterIdFromTweet(record.value()),record);
                         logger.info("Bonsai Data element ID: " + id);
                     } catch (Exception e) {
                         // Bad data
@@ -52,12 +58,13 @@ public class ConsumerThreadHandler implements Runnable {
                         e.printStackTrace();
                     }
                 }
+                bulkResponse = client.bulk(bulkRequest,RequestOptions.DEFAULT);
                 // this will commit the data // we will not use auto-commit
                 consumer.commitSync();
             }
-        }catch (WakeupException e){
+        }catch (Exception e){
             logger.info("Kafka Consumer Exited");
-        } finally {
+        }  finally {
             try {
                 client.close();
             } catch (IOException e) {
@@ -66,10 +73,9 @@ public class ConsumerThreadHandler implements Runnable {
             consumer.close();
             // tell main method consumer is over
             latch.countDown();
-
         }
-
     }
+
 
     //shutdown the consumer
     void shutDown(){
@@ -79,16 +85,31 @@ public class ConsumerThreadHandler implements Runnable {
 
 
     // push data to bonsai (Elastic Cloud)
-    private String pushDataToBonsai(final String id, final String value) throws IOException {
+    private String pushDataToBonsai(final String id, final ConsumerRecord record) throws IOException {
          // create a index reqest
         // it will go to '/twitter/tweets'
         IndexRequest indexRequest = new IndexRequest(
                 "twitter",
                 "tweets",
                 id
-        ).source(value, XContentType.JSON);
+        ).source(record.value(), XContentType.JSON);
 
         // Here we get the index response
+        // for normal push Data
+        //return pushNormalData(indexRequest);
+        return pushBulkData(indexRequest,record);
+
+    }
+
+
+    // performance data
+    private String pushBulkData(final IndexRequest indexRequest,final ConsumerRecord record){
+        bulkRequest.add(indexRequest);
+        return record.topic() + "_" + record.partition() + "_" + record.offset();
+    }
+
+    // normal data
+    private String pushNormalData(final IndexRequest indexRequest) throws IOException {
         IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
         return  indexResponse.getId();
     }
