@@ -51,7 +51,8 @@ public class ConsumerThreadHandler implements Runnable {
                     // we have receive all the data we have to push into the elastic search
                     try {
                        String id = pushDataToBonsai(getTwitterIdFromTweet(record.value()),record);
-                        logger.info("Bonsai Data element ID: " + id);
+                        //logger.info("Bonsai Data element ID: " + id);
+                        logger.info("Bonsai Data element ID but not used in Elastic search just for Example: " + id);
                     } catch (Exception e) {
                         // Bad data
                         logger.error("Bad Data Kafka: " + record.value());

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3e766e9c-b343-4b80-8918-88fe5f49f3ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/setup/elasticsearch/properties/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/setup/elasticsearch/properties/Properties.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="63" column="13" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+            <state relative-caret-position="168">
+              <caret line="54" column="107" selection-start-line="54" selection-start-column="107" selection-end-line="54" selection-end-column="107" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,7 +210,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551719742298" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551721212121" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -337,12 +336,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549885824481</updated>
       <workItem from="1549885829489" duration="56303000" />
-      <workItem from="1550827851980" duration="38232000" />
+      <workItem from="1550827851980" duration="38983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94535000" />
+    <option name="totallyTimeSpent" value="95286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -353,14 +352,14 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" visible="true" weight="0.24096386" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.24096386" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.32891566" />
@@ -658,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="63" column="13" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        <state relative-caret-position="168">
+          <caret line="54" column="107" selection-start-line="54" selection-start-column="107" selection-end-line="54" selection-end-column="107" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
