@@ -50,6 +50,8 @@ public class ConsumerThreadHandler implements Runnable {
                         e.printStackTrace();
                     }
                 }
+                // this will commit the data // we will not use auto-commit
+                consumer.commitSync();
             }
         }catch (WakeupException e){
             logger.info("Kafka Consumer Exited");

@@ -18,6 +18,8 @@ public class Properties {
         properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, OFFSET_LATEST);
         // disable auto commit of offset. By default it will be auto commit. (Manual commit of offset)
         properties.setProperty(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG,"false");
+        //MAX Record fetch set (Max 100 record Consumer get only)
+        properties.setProperty(ConsumerConfig.MAX_POLL_RECORDS_CONFIG,"100");
         return properties;
     }
 
