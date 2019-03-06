@@ -47,23 +47,31 @@ public class ConsumerThreadHandler implements Runnable {
         try {
             while(true) {
                 ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+                logger.info("Size of record::" + records.count());
                 for (ConsumerRecord<String, String> record : records) {
                     // we have receive all the data we have to push into the elastic search
                     try {
                        String id = pushDataToBonsai(getTwitterIdFromTweet(record.value()),record);
                         //logger.info("Bonsai Data element ID: " + id);
-                        logger.info("Bonsai Data element ID but not used in Elastic search just for Example: " + id);
+                        //logger.info("Bonsai Data element ID but not used in Elastic search just for Example: " + id);
                     } catch (Exception e) {
                         // Bad data
                         logger.error("Bad Data Kafka: " + record.value());
                         e.printStackTrace();
                     }
                 }
-                bulkResponse = client.bulk(bulkRequest,RequestOptions.DEFAULT);
-                // this will commit the data // we will not use auto-commit
-                consumer.commitSync();
+                if(records.count()>0) {
+                    try {
+                        bulkResponse = client.bulk(bulkRequest, RequestOptions.DEFAULT);
+                    } catch (IOException e) {
+                        logger.error("Bulk Error: " + e.getMessage());
+                        e.printStackTrace();
+                    }
+                    // this will commit the data // we will not use auto-commit
+                    consumer.commitSync();
+                }
             }
-        }catch (Exception e){
+        }catch (WakeupException e){
             logger.info("Kafka Consumer Exited");
         }  finally {
             try {
@@ -100,6 +108,7 @@ public class ConsumerThreadHandler implements Runnable {
         //return pushNormalData(indexRequest);
         return pushBulkData(indexRequest,record);
 
+        //connnectToPhone
     }
 
 

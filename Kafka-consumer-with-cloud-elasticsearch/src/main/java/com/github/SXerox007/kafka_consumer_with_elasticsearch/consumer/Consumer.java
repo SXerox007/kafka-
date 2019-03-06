@@ -17,7 +17,7 @@ public class Consumer {
 
     private Consumer(){}
 
-    private void run() {
+     void run() {
         CountDownLatch countDownLatch = new CountDownLatch(1);
         Properties consumerElements = new Properties();
         KafkaConsumer<String,String> consumer = consumerElements.createConsumer();
