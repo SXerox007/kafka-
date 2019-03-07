@@ -63,6 +63,7 @@ public class ConsumerThreadHandler implements Runnable {
                 if(records.count()>0) {
                     try {
                         bulkResponse = client.bulk(bulkRequest, RequestOptions.DEFAULT);
+                        logger.info("Bulk Response:" + bulkResponse);
                     } catch (IOException e) {
                         logger.error("Bulk Error: " + e.getMessage());
                         e.printStackTrace();

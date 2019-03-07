@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e766e9c-b343-4b80-8918-88fe5f49f3ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/Consumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/info.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/info.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/target/classes/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/target/classes/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,23 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/Consumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/setup/elasticsearch/properties/Properties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="74" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="74" />
+            <state relative-caret-position="349">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,41 +66,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-388">
-              <caret line="49" column="50" lean-forward="true" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+            <state relative-caret-position="442">
+              <caret line="65" column="69" lean-forward="true" selection-start-line="65" selection-start-column="69" selection-end-line="65" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/constants/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/info.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="30">
-                <caret line="2" selection-start-line="2" selection-end-line="2" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -187,8 +141,8 @@
         <option value="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/pom.xml" />
         <option value="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/setup/elasticsearch/properties/Properties.java" />
         <option value="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/Consumer.java" />
-        <option value="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.java" />
         <option value="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/info.sh" />
+        <option value="$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.java" />
       </list>
     </option>
   </component>
@@ -295,7 +249,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551893793066" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551981223212" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -421,23 +375,22 @@
       <option name="presentableId" value="Default" />
       <updated>1549885824481</updated>
       <workItem from="1549885829489" duration="56303000" />
-      <workItem from="1550827851980" duration="44966000" />
+      <workItem from="1550827851980" duration="47510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101269000" />
+    <option name="totallyTimeSpent" value="103813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -447,7 +400,7 @@
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.24096386" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -700,50 +653,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter-kafka-producer/src/main/java/kafka_twitter/Producer/TwitterProducer.java">
+    <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/info.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/setup/elasticsearch/properties/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="74" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-388">
-          <caret line="49" column="50" lean-forward="true" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/constants/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -757,10 +670,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/info.sh">
+    <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/constants/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/setup/elasticsearch/properties/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="74" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter-kafka-producer/src/main/java/kafka_twitter/Producer/TwitterProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/ConsumerThreadHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="65" column="69" lean-forward="true" selection-start-line="65" selection-start-column="69" selection-end-line="65" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka-consumer-with-cloud-elasticsearch/src/main/java/com/github/SXerox007/kafka_consumer_with_elasticsearch/consumer/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
